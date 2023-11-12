@@ -3,7 +3,7 @@
  
  <h2>Description</h2>
 In this Project, attacks are simulated using a virtual windows and linux machine and the attack is monitored using the Endpoint Detection and Response agent
-called LimaCharlie.Through LimaCharlie, one simulated attack is detected and another one is detected and blocked using rules.
+called LimaCharlie.Through LimaCharlie, one simulated attack is detected and another one is detected and blocked using detection/block rules.
 <br />
 
 
