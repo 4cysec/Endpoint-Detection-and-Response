@@ -16,12 +16,13 @@ called LimaCharlie.Through LimaCharlie, one simulated attack is detected and ano
 - <b>LimaCharlie</b>
 
 <h2>Environments Used </h2>
+
 - <b>VMware Workstation Pro 17</b>
 - <b>Windows 10</b> (21H2)
 - <b>Linux Ubuntu</b> 
 
 
-<h2>Program walk-through:</h2>
+<h2>Project walk-through:</h2>
 
 <p align="center">
 Launch the utility: <br/>
