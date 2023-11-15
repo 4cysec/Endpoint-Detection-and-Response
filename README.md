@@ -37,7 +37,6 @@ The Summary of the VM Environment is as follows:
     <p align="center"><b>Attack Monitor & Detection</b><br/>
 
 
-
 <!--
  ```diff
 - text in red
