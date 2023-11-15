@@ -34,12 +34,12 @@ The Summary of the VM Environment is as follows:
 2.  Linux Virtual Machine (Ubuntu Server Version) with Sliver Command and Control framework installed.
     Sliver will be used to deliver malware to the Windows VM.
 
-    Attack and Detection
+    <b>Attack Monitor & Detection</b>
 
 
 <p align="center">
 Launch the utility: <br/>
-<img src="https://i.imgur.com/62T" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/62T" height="80%" width="80%" alt="Attack Monitor & Detection"/>
 <br />
 <br />
 Select the disk:  <br/>
