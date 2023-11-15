@@ -25,13 +25,21 @@ called LimaCharlie.Through LimaCharlie, simulated attacks are detected and block
 <h2>Project walk-through:</h2>
 
 The setup for the VM environment consists of many steps.  So for the detailed steps, a link is provided to Eric Capuano's <b>So you want to be a SOC Analyst?(Part1)</b> <a href=https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-part>here</a>
-  .
 
+The Summary of the VM Environment is as follows:
+1.  Establishment of a Windows Virtual Machine with Windows Defender disabled/suppressed and
+    and Sysmon installed. Sysmon will provide telemetry through LimaCharlie which is also installed
+    on the Windows VM.
+
+2.  Linux Virtual Machine (Ubuntu Server Version) with Sliver Command and Control framework installed.
+    Sliver will be used to deliver malware to the Windows VM.
+
+    Attack and Detection
 
 
 <p align="center">
 Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/62T" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
