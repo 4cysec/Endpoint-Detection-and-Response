@@ -18,7 +18,7 @@ called LimaCharlie.Through LimaCharlie, simulated attacks are detected and block
 <h2>Environments Used </h2>
 
 - <b>VMware Workstation Pro 17</b>
-- <b>Windows </b>
+- <b>Windows 11 Enterprise</b>
 - <b>Linux Ubuntu(Server Version)</b> 
 
 
