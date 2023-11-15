@@ -2,9 +2,8 @@
 
  
  <h2>Description</h2>
-In this Project, attacks are simulated using a virtual windows and linux machine and the attack is monitored using the Endpoint Detection and Response agent
-called LimaCharlie.Through LimaCharlie, one simulated attack is detected and another one is detected and blocked using detection/block rules.
-<br />
+In this Project, attacks are simulated using a virtual Windows and Linux machine and the attack is monitored, detected and blocked using the Endpoint Detection and Response agent
+called LimaCharlie.Through LimaCharlie, simulated attacks are detected and blocked using detection/block rules.<br />
 
 
 <h2>Languages and Utilities Used</h2>
@@ -19,11 +18,16 @@ called LimaCharlie.Through LimaCharlie, one simulated attack is detected and ano
 <h2>Environments Used </h2>
 
 - <b>VMware Workstation Pro 17</b>
-- <b>Windows 10</b> (21H2)
-- <b>Linux Ubuntu</b> 
+- <b>Windows </b>
+- <b>Linux Ubuntu(Server Version)</b> 
 
 
 <h2>Project walk-through:</h2>
+
+The setup for the VM environment consists of many steps.  So for the detailed steps, a link is provided to Eric Capuano's <b>So you want to be a SOC Analyst?(Part1)</b> <a href=https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-part>here</a>
+  .
+
+
 
 <p align="center">
 Launch the utility: <br/>
