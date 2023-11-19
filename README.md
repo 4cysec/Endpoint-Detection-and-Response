@@ -77,6 +77,28 @@ B.  Linux Virtual Machine (Ubuntu Server Version) with Sliver Command and Contro
 
 ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6c9c5a86-cfa2-431a-849a-1277643ca12a)
 
+Various attacks can be done through the established session. However, we will proceed to monitoring and detecting this attack in
+the Lima Charlie tool.
+
+9.  We can now look for our attack in the Lima Charlie web application. Please note that Lima Charlie was configured after
+    the establishment of the virtual machines. The detailed steps are in the link above.
+
+    --> Sensor List
+        --> Hostname(windev2305eval.localdomain)
+
+![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/a7849e22-66e5-4caa-a8e5-988e51a4e759)
+
+    From here we navigate to -->processes and we find our malware "MASSIVE_DEPRESSIVE.exe"
+    Note that there is no green check indicating a signature for the malware. A lack of signature can indicate a malicious
+    file/process.
+
+    ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/985161fa-1ac7-46d6-8db9-a11361fb13d6)
+
+  Navigating just below Processes to --> Network we can see the malware and its source IP and other information.
+
+  ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/fd77e80b-4e11-4adf-a06a-296534ed5bfc)
+
+  
 
 
     
