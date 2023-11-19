@@ -98,7 +98,15 @@ the Lima Charlie tool.
 
   ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/fd77e80b-4e11-4adf-a06a-296534ed5bfc)
 
-  
+  Below the Network we may go into -->File System and search for the malware's file path.
+
+![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/9631c089-114f-4ba9-9d1a-71fe5bd3a79a)
+
+In the same left menu, we can click on Timeline and monitor near real-time telemetry of the host system.  We can find the
+event and its processes and the time of its processes.
+
+![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/dfffca45-e5a7-44be-ae0a-436923b90d1d)
+
 
 
     
