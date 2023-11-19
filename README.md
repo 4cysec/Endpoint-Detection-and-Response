@@ -27,14 +27,21 @@ called LimaCharlie.Through LimaCharlie, simulated attacks are detected and block
 The setup for the VM environment consists of many steps.  So for the detailed steps, a link is provided to Eric Capuano's <b>So you want to be a SOC Analyst?(Part1)</b> <a href=https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-part>here</a>
 
 The Summary of the VM Environment is as follows:
-1.  Establishment of a Windows Virtual Machine with Windows Defender disabled/suppressed and
+A.  Establishment of a Windows Virtual Machine with Windows Defender disabled/suppressed and
     and Sysmon installed. Sysmon will provide telemetry through LimaCharlie which is also installed
     on the Windows VM.
 
-2.  Linux Virtual Machine (Ubuntu Server Version) with Sliver Command and Control framework installed.
+B.  Linux Virtual Machine (Ubuntu Server Version) with Sliver Command and Control framework installed.
     Sliver will be used to deliver malware to the Windows VM.
 
-    <p align="center"><b>Attack Monitor & Detection</b><br/>
+<p align="left"><b>Attack Monitor & Detection</b><br/>
+
+1.  In Linux Machine:
+    Drop into root shell and change directory to Sliver location--> [cd /opt/sliver]
+
+2.  Launch Sliver C2 Agent-->sliver-server
+
+     ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/df71e29b-f3c4-4ca1-a42d-ce608735378f)
 
 
 <!--
