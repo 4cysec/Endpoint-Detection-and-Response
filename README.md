@@ -34,7 +34,7 @@ A.  Establishment of a Windows Virtual Machine with Windows Defender disabled/su
 B.  Linux Virtual Machine (Ubuntu Server Version) with Sliver Command and Control framework installed.
     Sliver will be used to deliver malware to the Windows VM.
 
-<p align="left"><b>Attack Monitor & Detection</b><br/>
+<p align="left"><b>Attack & Monitor</b><br/>
 
 1.  In Linux Machine:
     Drop into root shell and change directory to Sliver location--> cd /opt/sliver
@@ -107,6 +107,26 @@ event and its processes and the time of its processes.
 
 ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/dfffca45-e5a7-44be-ae0a-436923b90d1d)
 
+
+
+
+<p align="left"><b>Attack & Detection with Rules</b><br/>
+
+Now we will attack the Windows VM and detect the attack with a detection rule.
+
+1.  First we reestablish the Sliver malware's attack session with the Windows VM
+    and look for the privileges we have on the Windows machine through the C2 agent.
+    ---> use[session id]
+         -->getprivs
+      And we check for "SeDebugPrivilege" which allows for privilege escalation in attacks.
+
+    ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/e34dfa4d-7b5b-4512-95b8-6826f36f8f8a)
+
+2.  We will use an attack that threat actors use for stealing credentials from a system.
+ Using the command -->procdump -n lsass.exe -s lsass.dmp
+
+           
+    
 
 
     
