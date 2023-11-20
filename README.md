@@ -124,8 +124,31 @@ Now we will attack the Windows VM and detect the attack with a detection rule.
 
 2.  We will use an attack that threat actors use for stealing credentials from a system.
  Using the command -->procdump -n lsass.exe -s lsass.dmp
+We can find the attack in the Timeline section in Lima Charlie by filtering Sensitive Process Access
 
-           
+![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6a40730c-c45f-4ec5-9274-48ca26c92740)
+
+3. Now we will write a detection rule through Lima Charlie.
+   Clicking on the event opens an event panel with information.
+   To enter a detection rule, we click on the box shown below
+   ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/5a58c133-5493-4b7e-84c5-a5bb4d81763e)
+
+   In the "Detect" box we remove the previous detection contents from the box and entering our rule
+   --> event: SENSITIVE_PROCESS_ACCESS
+       op: ends with
+       path: event/*/TARGET/FILE_PATH
+       value: lsass.exe
+
+       The above specifies detecting an event of SENSITIVE PROCESS ACCESS with the process having lsass.exe.
+
+        In the "Respond" box we add -->- action: report
+                                         name: LSASS access
+
+
+![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/0972d6f7-21b0-4e06-884c-edbef1dee968)
+
+
+ This will prompt Lima Charlie to provide a detection report upon detection. Click Save and we are done.          
     
 
 
