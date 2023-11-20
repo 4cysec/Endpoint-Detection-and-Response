@@ -148,7 +148,7 @@ We can find the attack in the Timeline section in Lima Charlie by filtering Sens
 ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/0972d6f7-21b0-4e06-884c-edbef1dee968)
 
 
- This will prompt Lima Charlie to provide a detection report upon detection. Click Save and we are done.          
+ This will prompt Lima Charlie to provide a detection report upon detection. Click Save and name the rule.          
     
 
 
