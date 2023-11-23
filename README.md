@@ -141,14 +141,17 @@ We can find the attack in the Timeline section in Lima Charlie by filtering Sens
 
        The above specifies detecting an event of SENSITIVE PROCESS ACCESS with the process having lsass.exe.
 
-        In the "Respond" box we add -->- action: report
+
+        In the "Respond" box we add --> - action: report
                                          name: LSASS access
+   
+ This will prompt Lima Charlie to provide a detection report upon detection. Click Save and name the rule.
+
+![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6262f2c7-3cfa-47d2-9448-1c1ca642c8b5)
 
 
-![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/0972d6f7-21b0-4e06-884c-edbef1dee968)
 
-
- This will prompt Lima Charlie to provide a detection report upon detection. Click Save and name the rule.          
+          
     
 
 
