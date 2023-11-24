@@ -110,7 +110,7 @@ event and its processes and the time of its processes.
 
 
 
-<p align="left"><b>Attack & Detection with Rules</b><br/>
+<p align="left"><b>Attack & Detection</b><br/>
 
 Now we will attack the Windows VM and detect the attack with a detection rule.
 
@@ -149,6 +149,14 @@ We can find the attack in the Timeline section in Lima Charlie by filtering Sens
 
 ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6262f2c7-3cfa-47d2-9448-1c1ca642c8b5)
 
+4.  We can now test our detection rule by returning to the Sliver server console, back into the C2 session, and rerunning the same
+    procdump command as before.
+
+    In Lima Charlie, we go back to sensors then Detections in the left side menu.
+
+    ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/9686c222-967d-4536-a6bd-fa9be8c3c942)
+
+    As seen above, the attack was detected!
 
 
           
