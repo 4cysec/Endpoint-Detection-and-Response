@@ -13,6 +13,7 @@ In this Project, attacks are simulated using a virtual Windows and Linux machine
 - <b>Sysmon</b>
 - <b>LimaCharlie</b>
 - <b>Secure Shell(SSH)</b>
+- <b>Python</b>
 
 <h2>Environments Used </h2>
 
@@ -87,27 +88,35 @@ the Lima Charlie tool.
 
 ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/a7849e22-66e5-4caa-a8e5-988e51a4e759)
 
-    From here we navigate to -->processes and we find our malware "MASSIVE_DEPRESSIVE.exe"
-    Note that there is no green check indicating a signature for the malware. A lack of signature can indicate a malicious
-    file/process.
 
-    ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/985161fa-1ac7-46d6-8db9-a11361fb13d6)
+    From here we navigate to -->processes and we find our malware "MASSIVE_DEPRESSIVE.exe"
+    Note that there is no green check mark indicating a signature for the malware. A lack of signature can indicate a malicious
+    process.
+
+
+  ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/985161fa-1ac7-46d6-8db9-a11361fb13d6)
+
 
   Navigating just below Processes to --> Network we can see the malware and its source IP and other information.
 
+
   ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/fd77e80b-4e11-4adf-a06a-296534ed5bfc)
+
 
   Below the Network we may go into -->File System and search for the malware's file path.
 
+
 ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/9631c089-114f-4ba9-9d1a-71fe5bd3a79a)
+
 
 In the same left menu, we can click on Timeline and monitor near real-time telemetry of the host system.  We can find the
 event and its processes and the time of its processes.
 
+
 ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/dfffca45-e5a7-44be-ae0a-436923b90d1d)
 
 
-
+_________________________________________________________________________________________________________________________________________________________
 
 <p align="left"><b>Attack & Detection</b><br/>
 
@@ -175,6 +184,38 @@ ________________________________________________________________________________
 
     ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6915f891-700b-4902-95d0-964faf27c7aa)
 
+5.  Now we look into Lima Charlie Detections as before. Lima Charlie detects the attack through Sigma Rules.
+
+   ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/c24fc0c8-453e-40e3-8308-6dbc171a8ce6)
+
+6.  We can view the event in the Timeline and view the pane on the right to access the rule options.
+
+   ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/2e890a52-217b-404d-8efb-e57f251d9f04)
+
+7.  Writing D&R rules:
+    In Respond Box Enter--> - action: report
+                               name: vss_deletion_kill_it
+                             - action: task
+                               command:
+                             - deny_tree
+                             - <<routing/parent>>
+    Name and Save the rule.
+
+    ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/c4e4e8ae-c9a7-4f86-a021-92ff14158510)
+
+
+    Note that "action: report" generates the detection report and the "action: task" will deny the parent process or kill the execution
+    of the attack.
+
+8.  Test the block rule by going back to the Linux VM Sliver-server shell and repeating the command-->vssadmin delete shadows /all
+
+     ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/e201afbd-13b5-4e3f-86c4-5b7ae82825bb)
+
+    Then we run our whoami command.
+ 
+   ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/e4c0e9d0-5f57-44b9-9385-6709dfae48b2)
+
+   We can see that the shell was automatically terminated. The block rule was successful!
 
 
 
