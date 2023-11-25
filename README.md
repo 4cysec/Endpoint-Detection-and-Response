@@ -156,10 +156,26 @@ We can find the attack in the Timeline section in Lima Charlie by filtering Sens
     ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/9686c222-967d-4536-a6bd-fa9be8c3c942)
 
     As seen above, the attack was detected!
+____________________________________________________________________________________________________________________________________________________________________________
+
+<p align="left"><b>Attack & Block</b><br/>
+  Deletion of Volume Shadow Copies is a popular attack connected with ransomware.  In this section, we
+ will perform the above mentioned attack and block it upon detection using Lima Charlie.
+
+1.  First we restart our Sliver C2 session with the victim machine following the steps in the above sections.
+
+2.  Run command -->shell
+    Answer yes to question “This action is bad OPSEC, are you an adult?”
+
+    ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/329ab9f8-9c82-4789-9fe1-062aa669021a)
+
+3.  Run command -->vssadmin delete shadows /all
+
+4.  Run command -->whoami
+
+    ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6915f891-700b-4902-95d0-964faf27c7aa)
 
 
-          
-    
 
 
     
