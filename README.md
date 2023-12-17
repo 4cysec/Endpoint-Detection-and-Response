@@ -7,8 +7,7 @@ In this Project, attacks are simulated using a virtual Windows and Linux machine
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Command Line</b>
+- <b>Windows/Linux Command Line</b>
 - <b>Sliver</b>
 - <b>Sysmon</b>
 - <b>LimaCharlie</b>
