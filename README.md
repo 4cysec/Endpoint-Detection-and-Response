@@ -88,7 +88,7 @@ the Lima Charlie tool.
 ![image](https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/a7849e22-66e5-4caa-a8e5-988e51a4e759)
 
 
-    From here we navigate to -->processes and we find our malware "MASSIVE_DEPRESSIVE.exe"
+    From here we navigate to-->processes and we find our malware "MASSIVE_DEPRESSIVE.exe"
     Note that there is no green check mark indicating a signature for the malware. A lack of signature can indicate a malicious
     process.
 
