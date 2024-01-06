@@ -142,7 +142,7 @@ Now we will attack the Windows VM and detect the attack with a detection rule.
       And we check for "SeDebugPrivilege" which allows for privilege escalation in attacks.
 
 
-<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/e34dfa4d-7b5b-4512-95b8-6826f36f8f8a" width="500" height="300" />
+<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/e34dfa4d-7b5b-4512-95b8-6826f36f8f8a" width="500" height="350" />
     
 
 2.  We will use an attack that threat actors use for stealing credentials from a system.
@@ -150,7 +150,7 @@ Now we will attack the Windows VM and detect the attack with a detection rule.
 We can find the attack in the Timeline section in Lima Charlie by filtering Sensitive Process Access
 
 
-<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6a40730c-c45f-4ec5-9274-48ca26c92740" width="500" height="300" />
+<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6a40730c-c45f-4ec5-9274-48ca26c92740" width="800" height="400" />
 
 
 3. Now we will write a detection rule through Lima Charlie.
@@ -158,7 +158,7 @@ We can find the attack in the Timeline section in Lima Charlie by filtering Sens
    To enter a detection rule, we click on the box shown below
 
 
-<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/5a58c133-5493-4b7e-84c5-a5bb4d81763e" width="500" height="300" />
+<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/5a58c133-5493-4b7e-84c5-a5bb4d81763e" width="800" height="400" />
 
 
 
@@ -177,7 +177,7 @@ We can find the attack in the Timeline section in Lima Charlie by filtering Sens
  This will prompt Lima Charlie to provide a detection report upon detection. Click Save and name the rule.
 
 
-<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6262f2c7-3cfa-47d2-9448-1c1ca642c8b5" width="500" height="300" />
+<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6262f2c7-3cfa-47d2-9448-1c1ca642c8b5" width="500" height="400" />
 
 
 4.  We can now test our detection rule by returning to the Sliver server console, back into the C2 session, and rerunning the same
@@ -202,7 +202,7 @@ ________________________________________________________________________________
     Answer yes to question “This action is bad OPSEC, are you an adult?”
 
 
-<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/329ab9f8-9c82-4789-9fe1-062aa669021a" width="500" height="300" />
+<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/329ab9f8-9c82-4789-9fe1-062aa669021a" width="700" height="150" />
    
 
 3.  Run command -->vssadmin delete shadows /all
@@ -210,19 +210,19 @@ ________________________________________________________________________________
 4.  Run command -->whoami
 
 
-<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6915f891-700b-4902-95d0-964faf27c7aa" width="500" height="300" />
+<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/6915f891-700b-4902-95d0-964faf27c7aa" width="500" height="100" />
    
 
 5.  Now we look into Lima Charlie Detections as before. Lima Charlie detects the attack through Sigma Rules.
 
 
-<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/c24fc0c8-453e-40e3-8308-6dbc171a8ce6" width="500" height="300" />
+<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/c24fc0c8-453e-40e3-8308-6dbc171a8ce6" width="700" height="400" />
    
 
 6.  We can view the event in the Timeline and view the pane on the right to access the rule options.
 
 
-<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/2e890a52-217b-404d-8efb-e57f251d9f04" width="500" height="300" />
+<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/2e890a52-217b-404d-8efb-e57f251d9f04" width="700" height="400" />
    
 
 7.  Writing D&R rules:
@@ -235,7 +235,7 @@ ________________________________________________________________________________
     Name and Save the rule.
 
 
-<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/c4e4e8ae-c9a7-4f86-a021-92ff14158510" width="500" height="300" />
+<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/c4e4e8ae-c9a7-4f86-a021-92ff14158510" width="700" height="400" />
    
 
 
@@ -245,13 +245,13 @@ of the attack.
 8.  Test the block rule by going back to the Linux VM Sliver-server shell and repeating the command-->vssadmin delete shadows /all
 
 
-<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/e201afbd-13b5-4e3f-86c4-5b7ae82825bb" width="500" height="300" />
+<img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/e201afbd-13b5-4e3f-86c4-5b7ae82825bb" width="600" height="200" />
   
 
-Then we run our whoami command.
+Then we run the whoami command.
 
  
- <img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/e4c0e9d0-5f57-44b9-9385-6709dfae48b2" width="500" height="300" />
+ <img src="https://github.com/4cysec/Endpoint-Detection-and-Response/assets/149924544/e4c0e9d0-5f57-44b9-9385-6709dfae48b2" width="500" height="100" />
  
 
  
